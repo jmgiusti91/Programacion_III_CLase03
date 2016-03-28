@@ -9,5 +9,15 @@
 	$nombre=$_POST["usuario"];
 	echo "<br>";
 	echo "<br>";
-	echo $nombre;	
+	echo $nombre;
+
+	echo "<br>";
+	echo "<br>";
+
+	if ($_POST["usuario"]=="admin" && $_POST["clave"]==1234) {
+			include_once"bienvenidos.html";
+		} else
+		{
+			include_once"no_logueado.html";
+		}	
 ?>
